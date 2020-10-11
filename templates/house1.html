@@ -27,7 +27,15 @@
       </div>
       <div class='col-md-4'>
         <ul>
-          <li></li>
+          <li>Latitude: {{ raw_data["lbstream"]['parcelid']['source'][0]["record"]['LATITUDE']["value"] }}</li>
+          <li>Longitude: {{ raw_data["lbstream"]['parcelid']['source'][0]["record"]['LONGITUDE']["value"] }}</li>
+          <li>Neighborhood: {{ raw_data["lbstream"]['parcelid']['source'][0]["record"]['neighbor']["value"] }}</li>
+          <li>Number of Bedrooms: {{ raw_data["lbstream"]['parcelid']['source'][1]["record"]["bedrooms"]["value"] }}</li>
+          <li>Number of Bathrooms: {{ raw_data["lbstream"]['parcelid']['source'][1]["record"]['baths']["value"] }}</li>
+          <li>Number of Half-Bathrooms: {{ raw_data["lbstream"]['parcelid']['source'][1]["record"]['halfbath']["value"] }}</li>
+          <li>Number of Rooms: {{ raw_data["lbstream"]['parcelid']['source'][1]["record"]['rooms']["value"] }}</li>
+          <li>Number of Stories: {{ raw_data["lbstream"]['parcelid']['source'][1]["record"]['rnumstor']["value"] }}</li>
+          <li>Total Living Area: {{ raw_data["lbstream"]['parcelid']['source'][1]["record"]['livatot']["value"] }}</li>
         </ul>
       </div>
     </div>

@@ -23,7 +23,8 @@ def house1():
     raw_data = raw_data.replace("<?xmlversion='1.0'?>", "<?xml version='1.0'?>")
     parsed_xml_object = xmltodict.parse(raw_data)
     json_result = json.dumps(parsed_xml_object)
-    return render_template('house1.html', raw_data=json_result)
+    loaded_json = json.loads(json_result)
+    return render_template('house1.html', raw_data=loaded_json)
 
 
 @app.route('/house2')
@@ -35,7 +36,8 @@ def house2():
     raw_data = raw_data.replace("<?xmlversion='1.0'?>", "<?xml version='1.0'?>")
     parsed_xml_object = xmltodict.parse(raw_data)
     json_result = json.dumps(parsed_xml_object)
-    return render_template('house2.html', raw_data=json_result)
+    loaded_json = json.loads(json_result)
+    return render_template('house2.html', raw_data=loaded_json)
 
 @app.route('/house3')
 def house3():
@@ -46,7 +48,8 @@ def house3():
     raw_data = raw_data.replace("<?xmlversion='1.0'?>", "<?xml version='1.0'?>")
     parsed_xml_object = xmltodict.parse(raw_data)
     json_result = json.dumps(parsed_xml_object)
-    return render_template('house3.html', raw_data=json_result)
+    loaded_json = json.loads(json_result)
+    return render_template('house3.html', raw_data=loaded_json)
 
 @app.route('/house4')
 def house4():
@@ -57,7 +60,8 @@ def house4():
     raw_data = raw_data.replace("<?xmlversion='1.0'?>", "<?xml version='1.0'?>")
     parsed_xml_object = xmltodict.parse(raw_data)
     json_result = json.dumps(parsed_xml_object)
-    return render_template('house4.html', raw_data=json_result)
+    loaded_json = json.loads(json_result)
+    return render_template('house4.html', raw_data=loaded_json)
 
 @app.route('/house5')
 def house5():
@@ -68,7 +72,8 @@ def house5():
     raw_data = raw_data.replace("<?xmlversion='1.0'?>", "<?xml version='1.0'?>")
     parsed_xml_object = xmltodict.parse(raw_data)
     json_result = json.dumps(parsed_xml_object)
-    return render_template('house5.html', raw_data=json_result)
+    loaded_json = json.loads(json_result)
+    return render_template('house5.html', raw_data=loaded_json)
 
 
 if __name__ == '__main__':
