@@ -1,7 +1,8 @@
-# CCLRC IT and Software Engineer Code Test
 
-## Part 1: Data Transformation
-Here are a few endpoints for parcel data with an XML stream. 
+# CCLRC-Code-Test
+
+This is a project takes the XML from the following streams, outputs the data in JSON format, and renders
+the results to a front-end created with Python and Flask.
 
 ```
 http://neocando.case.edu/cando/housingReport/lbxml.jsp?parcel=109-02-088
@@ -19,21 +20,38 @@ http://neocando.case.edu/cando/housingReport/lbxml.jsp?parcel=672-06-054
 http://neocando.case.edu/cando/housingReport/lbxml.jsp?parcel=673-12-062
 ```
 
-Using Python and Flask, write an endpoint script that takes any one of these XML streams and outputs the data in json format. The endpoint should have all the data coming in from the XML stream. 
+## Installing / Getting started
 
-## Part 2: Front-End Presenation
-Using Javascript and/or JQuery, and Bootstrap (or a combination), create a simple webpage that takes the endpoint from part 1 and displays all the information in a clear, readable interface. 
+1. Clone the repo
 
-The XML stream includes latitude and longitude points for the parcel which should also be part of your Part 1 API output. Using Google Maps API, embed a map on this page showing the location of the parcel with some basic information (Street address, Owner etc.). You should be able to use the free quota of the Google Maps API for this. 
+```shell
+git clone https://github.com/Stuartbkushner/CCLRC-Code-Test
+cd CCLRC-Code-Test
+awesome-project "Do something!"  # prints "Nah."
+```
+2. Initialize and activate a virtualenv:
+```
+$ virtualenv --no-site-packages env
+$ source env/bin/activate
+```
 
-There is also an image folder in the repo that has images with filenames related to the parcel number in the endpoint. Make sure to include that image in your web page. Where you place the image on the webpage is entirely up to you. 
+3. Install the dependencies:
+```
+$ pip install -r requirements.txt
+```
 
-Feel free to be creative and keep in mind that there will be a lot of data on one page so how you layout the information will aid in readability. 
+5. Run the development server:
+```
+$ python app.py
+```
 
-## Completion and Submission
-Completed work should include all code to arrive at the solution, plus assets and resources required to run Part 2. 
+6. Navigate to [http://localhost:5000](http://localhost:5000)
 
-PLEASE INCLUDE a detailed README containing the requirements and instructions to run the project locally. 
+## Licensing
 
-All completed work should be pushed to a public repo on Github. 
+One really important part: Give your project a proper license. Here you should
+state what the license is and how to find the text version of the license.
+Something like:
+
+"The code in this project is licensed under MIT license."
 

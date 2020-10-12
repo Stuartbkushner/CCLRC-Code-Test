@@ -1,5 +1,4 @@
 import json
-import pprint
 import xmltodict
 from urllib.request import urlopen
 from flask import Flask, render_template
