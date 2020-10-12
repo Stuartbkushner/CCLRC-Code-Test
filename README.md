@@ -30,8 +30,8 @@ cd CCLRC-Code-Test
 ```
 2. Initialize and activate a virtualenv:
 ```
-$ virtualenv --no-site-packages env
-$ source env/bin/activate
+$ virtualenv venv
+$ source venv/bin/activate
 ```
 
 3. Install the dependencies:
