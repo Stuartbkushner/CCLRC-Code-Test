@@ -27,7 +27,6 @@ http://neocando.case.edu/cando/housingReport/lbxml.jsp?parcel=673-12-062
 ```shell
 git clone https://github.com/Stuartbkushner/CCLRC-Code-Test
 cd CCLRC-Code-Test
-awesome-project "Do something!"  # prints "Nah."
 ```
 2. Initialize and activate a virtualenv:
 ```
