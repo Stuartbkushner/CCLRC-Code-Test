@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class='col-md-4'>
-        <ul>
+        <ul style="list-style-type: none;">
           <li>Latitude: {{ raw_data["lbstream"]['parcelid']['source'][0]["record"]['LATITUDE']["value"] }}</li>
           <li>Longitude: {{ raw_data["lbstream"]['parcelid']['source'][0]["record"]['LONGITUDE']["value"] }}</li>
           <li>Neighborhood: {{ raw_data["lbstream"]['parcelid']['source'][0]["record"]['neighbor']["value"] }}</li>
@@ -35,17 +35,10 @@
           <li>Number of Half-Bathrooms: {{ raw_data["lbstream"]['parcelid']['source'][1]["record"]['halfbath']["value"] }}</li>
           <li>Number of Rooms: {{ raw_data["lbstream"]['parcelid']['source'][1]["record"]['rooms']["value"] }}</li>
           <li>Number of Stories: {{ raw_data["lbstream"]['parcelid']['source'][1]["record"]['rnumstor']["value"] }}</li>
-          <li>Total Living Area: {{ raw_data["lbstream"]['parcelid']['source'][1]["record"]['livatot']["value"] }}</li>
+          <li>Total Living Area: {{ raw_data["lbstream"]['parcelid']['source'][1]["record"]['livatot']["value"] }} square feet</li>
         </ul>
       </div>
     </div>
     {% endblock %}
-    {% block footer %}
-    <footer class="text-muted">
-      <div class="container">
-        <p style="color: black;">&copy; 2020 Stuart Kushner</p>
-      </div>
-    </footer>
-  {% endblock %}
 </div>
 {% endblock %}

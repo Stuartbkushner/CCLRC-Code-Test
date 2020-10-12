@@ -1,8 +1,10 @@
 import os
-from os.path import join, dirname
+from flask import Flask
 from dotenv import load_dotenv
 
-dotenv_path = join(dirname(__file__), '.env')
+# load dotenv in the base root
+APP_ROOT = os.path.join(os.path.dirname(__file__), '..')   # refers to application_top
+dotenv_path = os.path.join(APP_ROOT, '.env')
 load_dotenv(dotenv_path)
 
-API_KEY = os.environ.get("API_KEY")
+API_KEY = os.getenv('API_KEY')
